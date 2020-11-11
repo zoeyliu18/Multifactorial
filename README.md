@@ -18,9 +18,9 @@ Larger files: >[CoNLL 2017 Shared Task - Automatically Annotated Raw Texts and W
 ```python3 code/ud_pp.py --input PATH_TO_UD_DATA --output OUTPUT_PATH```
 
 For each language, the code above generates:
-(1) Language_pp.csv
-(2) Language_words.txt
-(3) Language_pairs.txt
+*(1) Language_pp.csv*
+*(2) Language_words.txt*
+*(3) Language_pairs.txt*
 
 ### Counting word frequency from Larger CoNLLU files ###
 ```./word_count.sh``` (modify directory within the shell script as needed)
@@ -30,7 +30,7 @@ Run for each language; this generates Language_wc file
 ### Extracting Head-Dependent pairs from Larger CoNLLU files ###
 ```python3 code/hd.py --input PATH_TO_LARGER_FILES --output OUTPUT_PATH --language FULL_LANGUAGE_NAME(e.g. English)```
 
-Run for each language; this generates Language_pairs_all.txt 
+Run for each language; this generates ```Language_pairs_all.txt```
 
 ### Counting Head-Dependent pair frequency ###
 ```cat PAIR_FILE | sort | uniq -c | sort -rn > OUTPUT_FILE```
