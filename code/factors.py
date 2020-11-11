@@ -203,7 +203,6 @@ if __name__ == '__main__':
 	new_data['PP1_Pred'] = PP1_Pred
 	new_data['PP2_Pred'] = PP2_Pred
 
-
 	print('Generating new PP data')
 
 	outfile = io.open(args.new + language + '_pp.csv', 'w', encoding = 'utf-8')
