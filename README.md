@@ -40,9 +40,18 @@ E.g. ```cat English_pairs_all.txt | sort | uniq -c | sort -rn > English_jc```
 ### Getting embeddings for each word ###
 Again, take English as an example ```join -j 1 <(sort English_words.txt) <(sort cc.en.300.vec) > English_em```
 
-### Getting data for regression ###
-```python3 code/factors.py --pp PATH_TO_Language_PP.csv --em PATH_TO_fastText_embeddings --new OUTPUT_PATH_TO_NEW_Language_PP.csv --regress OUTPUT_PATH_TO_Regression_Data --language FULL_LANGUAGE_NAME```
+### Train language models for selected language ###
+Follow [Gulordava et al. (2018](https://github.com/facebookresearch/colorlessgreenRNNs)
 
-E.g. ```python3 code/factors.py --pp data/English_pp.csv --em data/cc.en.300.vec --new data/English_pp.csv --regress data/English_regression.csv --language English```
+### Calculate contextual predictability ###
+```python3 code/context.py --data PATH_TO_TRAIN/DEV/TEST --model MODEL_NAME --pp PATH_TO_Language_pp.csv --language FULL_LANGUAGE_NAME```
+
+E.g. ```python3 code/context.py --data model/ --model en.pt --pp data/ --language English```
+
+
+### Getting data for regression ###
+```python3 code/factors.py --pp PATH_TO_Language_pp.csv --em PATH_TO_fastText_embeddings --new OUTPUT_PATH_TO_NEW_Language_pp.csv --regress OUTPUT_PATH_TO_Regression_Data --language FULL_LANGUAGE_NAME```
+
+E.g. ```python3 code/factors.py --pp data/ --em data/cc.en.300.vec --new data/ --language English```
 
 ### Run Analysis ###
