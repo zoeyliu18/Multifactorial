@@ -75,7 +75,6 @@ if __name__ == '__main__':
 	parser.add_argument('--pp', type = str, help = 'input path to initial *_pp.csv data')
 	parser.add_argument('--em', type = str, help = 'input path to fastText embeddings')
 	parser.add_argument('--new', type = str, help = 'output path to new pp data')
-	parser.add_argument('--regress', type = str, help = 'output path to regression data')
 	parser.add_argument('--language', type = str, help = 'language being computed')
 
 
@@ -244,7 +243,7 @@ if __name__ == '__main__':
 
 		split = round(len(verbs) / 2) + 1
 
-		with io.open(args.regress, 'w', newline = '', encoding = 'utf-8') as f:
+		with io.open(args.new + language + '_regression.csv', 'w', newline = '', encoding = 'utf-8') as f:
 			writer = csv.writer(f)
 			writer.writerow(['Order', 'Len', 'PMI', 'Semantic_closeness', 'Lexical_frequency', 'Predictability', 'Pronominality', 'Verb'])
 			for i in range(split):
