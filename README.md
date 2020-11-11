@@ -22,20 +22,27 @@ For each language, the code above generates:
 (2) Language_words.txt
 (3) Language_pairs.txt
 
-## Counting word frequency from Larger CoNLLU files ##
+### Counting word frequency from Larger CoNLLU files ###
 ```./word_count.sh``` (modify directory within the shell script as needed)
 
-## Extracting Head-Dependent pairs from Larger CoNLLU files ##
+Run for each language; this generates Language_wc file
+
+### Extracting Head-Dependent pairs from Larger CoNLLU files ###
 ```python3 code/hd.py --input PATH_TO_LARGER_FILES --output OUTPUT_PATH --language FULL_LANGUAGE_NAME(e.g. English)```
 
-## Counting Head-Dependent pair frequency ##
-```cat PAIR_FILE(e.g. English_pairs_all.txt) | sort | uniq -c | sort -rn > OUTPUT_FILE(e.g. English_jc)```
+Run for each language; this generates Language_pairs_all.txt 
 
-## Getting embeddings for each word ##
+### Counting Head-Dependent pair frequency ###
+```cat PAIR_FILE | sort | uniq -c | sort -rn > OUTPUT_FILE```
+
+E.g. ```cat English_pairs_all.txt | sort | uniq -c | sort -rn > English_jc```
+
+### Getting embeddings for each word ###
 Again, take English as an example ```join -j 1 <(sort English_words.txt) <(sort cc.en.300.vec) > English_em```
 
 ## Getting data for regression ##
 ```python3 code/factors.py --pp PATH_TO_Language_PP.csv --em PATH_TO_fastText_embeddings --new OUTPUT_PATH_TO_NEW_Language_PP.csv --regress OUTPUT_PATH_TO_Regression_Data --language FULL_LANGUAGE_NAME```
+
 E.g. ```python3 code/factors.py --pp data/English_pp.csv --em data/cc.en.300.vec --new data/English_pp.csv --regress data/English_regression.csv --language English```
 
 ## Run Analysis ##
