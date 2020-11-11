@@ -14,7 +14,7 @@ Larger files: >[CoNLL 2017 Shared Task - Automatically Annotated Raw Texts and W
 
  >[fastText](https://fasttext.cc/docs/en/crawl-vectors.html)
  
-## Extract PP data, words, and pairs from gold-standard UD treebanks ##
+### Extract PP data, words, and pairs from gold-standard UD treebanks ###
 ```python3 code/ud_pp.py --input PATH_TO_UD_DATA --output OUTPUT_PATH```
 
 For each language, the code above generates:
