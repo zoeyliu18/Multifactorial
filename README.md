@@ -5,8 +5,8 @@
 
 *CoNLLU files*
  
- >Gold-Standard: [Universal Dependencies](https://github.com/UniversalDependencies)
- >Larger files: [CoNLL 2017 Shared Task - Automatically Annotated Raw Texts and Word Embeddings](https://lindat.mff.cuni.cz/repository/xmlui/handle/11234/1-1989)  
+Gold-Standard: >[Universal Dependencies](https://github.com/UniversalDependencies)
+Larger files: >[CoNLL 2017 Shared Task - Automatically Annotated Raw Texts and Word Embeddings](https://lindat.mff.cuni.cz/repository/xmlui/handle/11234/1-1989)  
 
 *Word embeddings*
 
