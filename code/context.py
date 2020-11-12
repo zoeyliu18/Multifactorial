@@ -54,13 +54,53 @@ os.chdir(path)
 language = args.language
 
 pp_data = pd.read_csv(path + language + '_pp.csv', encoding = 'utf-8')
+Context_PP1_simple = pp_data['Context_PP1_simple']
+Context_PP2_simple = pp_data['Context_PP2_simple']
 Context_PP1 = pp_data['Context_PP1']
 Context_PP2 = pp_data['Context_PP2']
 
 
+def context(pp_toks, lang):
+	pp = pp_toks
+	if lang == 'Chinese':
+		pp = s2t.convert(pp)
+
+	token = 0
+	idx = torch.LongTensor(len(pp))
+	for w in pp:
+		if w in dictionary.word2idx:
+			idx[token] = dictionary.word2idx[w]
+		else:
+			idx[token] = dictionary.word2idx["<unk>"]
+
+		token += 1
+
+	pp_batch = batchify(idx, 1, True)
+
+	return pp_batch
+
+
 PP1_PPL = []
+PP2_PPL = []
 
 for i in range(len(Context_PP1)):
+	PP1_PPL.append(str(evaluate(context(Context_PP1_simple[i], language))) + ' ' + str(evaluate(context(Context_PP1[i], language))))
+	PP2_PPL.append(str(evaluate(context(Context_PP2_simple[i], language))) + ' ' + str(evaluate(context(Context_PP2[i], language))))
+
+
+with io.open(path + language + '_pp1_pred', 'w', encoding = 'utf-8') as f:
+	for tok in PP1_PPL:
+		f.write(str(tok) + '\n')
+
+f.close()
+
+with io.open(path + language + '_pp2_pred', 'w', encoding = 'utf-8') as f:
+	for tok in PP2_PPL:
+		f.write(str(tok) + '\n')
+
+f.close()
+
+'''
 	pp = Context_PP1[i]
 	if args.language == 'Chinese':
 		pp = s2t.convert(pp)
@@ -85,7 +125,7 @@ for i in range(len(Context_PP2)):
 	pp = Context_PP2[i]
 	if args.language == 'Chinese':
 		pp = s2t.convert(pp)
-		
+
 	token = 0
 	idx = torch.LongTensor(len(pp))
 	for word in pp:
@@ -97,15 +137,4 @@ for i in range(len(Context_PP2)):
 	pp_batch = batchify(idx, 1, True)            
 	PP2_PPL.append(evaluate(pp_batch))
 
-
-with io.open(path + language + '_pp1_pred', 'w', encoding = 'utf-8') as f:
-	for tok in PP1_PPL:
-		f.write(str(tok) + '\n')
-
-f.close()
-
-with io.open(path + language + '_pp2_pred', 'w', encoding = 'utf-8') as f:
-	for tok in PP2_PPL:
-		f.write(str(tok) + '\n')
-
-f.close()
+'''
