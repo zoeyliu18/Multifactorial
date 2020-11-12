@@ -46,7 +46,7 @@ E.g. ```cat English_pairs_all.txt | sort | uniq -c | sort -rn > English_jc```
 Again, take English as an example ```join -j 1 <(sort English_words.txt) <(sort cc.en.300.vec) > English_em```
 
 ### Train language models for selected language ###
-Follow [Gulordava et al. (2018](https://github.com/facebookresearch/colorlessgreenRNNs)
+Follow [Gulordava et al. (2018)](https://github.com/facebookresearch/colorlessgreenRNNs)
 
 ### Calculate contextual predictability ###
 ```python3 code/context.py --data PATH_TO_TRAIN/DEV/TEST --model MODEL_NAME --pp PATH_TO_Language_pp.csv --language FULL_LANGUAGE_NAME```
