@@ -59,5 +59,6 @@ E.g. ```python3 code/context.py --data model/ --model en.pt --pp data/ --languag
 
 E.g. ```python3 code/factors.py --pp data/ --em data/cc.en.300.vec --language English```
 
+This generates ```Language_regression.csv``` for each language
 
 ### Run Analysis ###
