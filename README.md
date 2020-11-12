@@ -55,8 +55,9 @@ E.g. ```python3 code/context.py --data model/ --model en.pt --pp data/ --languag
 
 
 ### Getting data for regression ###
-```python3 code/factors.py --pp PATH_TO_Language_pp.csv --em PATH_TO_fastText_embeddings --new OUTPUT_PATH_TO_NEW_Language_pp.csv --regress OUTPUT_PATH_TO_Regression_Data --language FULL_LANGUAGE_NAME```
+```python3 code/factors.py --pp PATH_TO_Language_pp.csv --em PATH_TO_fastText_embeddings --regress OUTPUT_PATH_TO_Regression_Data --language FULL_LANGUAGE_NAME```
 
-E.g. ```python3 code/factors.py --pp data/ --em data/cc.en.300.vec --new data/ --language English```
+E.g. ```python3 code/factors.py --pp data/ --em data/cc.en.300.vec --language English```
+
 
 ### Run Analysis ###
