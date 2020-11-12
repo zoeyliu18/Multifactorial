@@ -7,6 +7,10 @@ from dictionary_corpus import Corpus
 from utils import repackage_hidden, get_batch, batchify
 from dictionary_corpus import Dictionary
 
+import opencc
+
+s2t = opencc.OpenCC('s2t.json')
+
 torch.cuda.manual_seed(1)
 
 parser = argparse.ArgumentParser()
@@ -58,6 +62,9 @@ PP1_PPL = []
 
 for i in range(len(Context_PP1)):
 	pp = Context_PP1[i]
+	if args.language == 'Chinese':
+		pp = s2t.convert(pp)
+
 	token = 0
 	idx = torch.LongTensor(len(pp))
 	for word in pp:
@@ -76,6 +83,9 @@ PP2_PPL = []
 
 for i in range(len(Context_PP2)):
 	pp = Context_PP2[i]
+	if args.language == 'Chinese':
+		pp = s2t.convert(pp)
+		
 	token = 0
 	idx = torch.LongTensor(len(pp))
 	for word in pp:
