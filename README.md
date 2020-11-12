@@ -20,19 +20,24 @@ Larger files: >[CoNLL 2017 Shared Task - Automatically Annotated Raw Texts and W
 For each language, the code above generates:
 *(1) Language_pp.csv*
 *(2) Language_words.txt*
-*(3) Language_pairs.txt*
+*(3) Language_tuples.txt*
 
 ### Counting word frequency from Larger CoNLLU files ###
 ```./word_count.sh``` (modify directory within the shell script as needed)
 
 Run for each language; this generates Language_wc file
 
+### Alternative: Use wordfreq to count ###
+```python3 code/freq.py --path PATH_TO_Language_words --language FULL_LANGUAGE_NAME --code LANGUAGEU_CODE```
+
+E.g. ```pytho3 code/freq.py --path data/ --language English --code en```
+
 ### Extracting Head-Dependent pairs from Larger CoNLLU files ###
 ```python3 code/hd.py --input PATH_TO_LARGER_FILES --output OUTPUT_PATH --language FULL_LANGUAGE_NAME(e.g. English)```
 
 Run for each language; this generates ```Language_pairs_all.txt```
 
-### Counting Head-Dependent pair frequency ###
+### Counting Head-Dependent pair frequency if calculating PMI ###
 ```cat PAIR_FILE | sort | uniq -c | sort -rn > OUTPUT_FILE```
 
 E.g. ```cat English_pairs_all.txt | sort | uniq -c | sort -rn > English_jc```
