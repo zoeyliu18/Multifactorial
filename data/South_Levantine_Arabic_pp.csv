@@ -1,0 +1,2 @@
+Sentence,Context_PP1,Context_PP2,Context_PP1_simple,Context_PP2_simple,PP1_simple,PP2_simple,Verb,PP1,PP2,PP1_len,PP2_len,Adp1,Adp2,NP1,NP2,PP1_Pronom,PP2_Pronom,PP1_Type,PP2_Type,Position,Language
+عملت الحجز في طوكيو قبل شهر .,عملت الحجز في طوكيو,عملت الحجز قبل شهر,عملت الحجز في طوكيو,عملت الحجز قبل شهر,فِي طُوكِيُو,قَبلَ شَهر,عَمِل,في طوكيو,قبل شهر,2,2,فِي,قَبلَ,طُوكِيُو,شَهر,X,NOUN,prepositional,prepositional,Postverbal,South_Levantine_Arabic

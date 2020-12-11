@@ -1,17 +1,16 @@
 #!/bin/bash
 
-language = "$1"
 
 #for file in "/Users/Silverlining/Desktop/ud-treebanks-v2.6/test/*.conllu"
-for file in "/workspace/raw_data/'$language'/*.conllu"
+for file in "/workspace/raw_data/English/*.conllu"
 do
 
     echo $file
 
-    cat $file | grep "^[0-9]" | cut -f3 >> $language + '_' + lemma
+    cat $file | grep "^[0-9]" | cut -f3 >> lemma
 
 done
 
-cat $language + '_' + lemma | sort | uniq -c | sort -rn > $language + '_' + lemma_count
+cat lemma | sort | uniq -c | sort -rn > English_wc
 
-rm $language + '_' + lemma
+rm lemma

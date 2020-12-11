@@ -1,0 +1,6 @@
+Sentence,Context_PP1,Context_PP2,Context_PP1_simple,Context_PP2_simple,PP1_simple,PP2_simple,Verb,PP1,PP2,PP1_len,PP2_len,Adp1,Adp2,NP1,NP2,PP1_Pronom,PP2_Pronom,PP1_Type,PP2_Type,Position,Language
+ዛሬ ወደ ተማሪ ቤት ለ መሄድ ኣል ተሰናዳ ህ ም ሳ ?,ዛሬ ወደ ተማሪ ቤት,ዛሬ ለ መሄድ,ዛሬ ወደ ቤት,ዛሬ ለ መሄድ,ወደ ቤት,ለ መሄድ,ተሰናዳ,ወደ ተማሪ ቤት,ለ መሄድ,3,2,ወደ,ለ,ቤት,መሄድ,NOUN,NOUN,prepositional,prepositional,Preverbal,Amharic
+ከ አንድ ኡ አገር ወደ አንድ ኡ አገር እየ_ዞርክ ኡ እ ኖር ኣል ኧሁ ።,ከ አንድ ኡ አገር,ወደ አንድ ኡ አገር,ከ አገር,ወደ አገር,ከ አገር,ወደ አገር,እየ_ዞርክ,ከ አንድ ኡ አገር,ወደ አንድ ኡ አገር,4,4,ከ,ወደ,አገር,አገር,NOUN,NOUN,prepositional,prepositional,Preverbal,Amharic
+ካሳ ትናንት በ ድንገት በ መኪና ወደ ጎንደር ሄድ ኧ ።,ካሳ ትናንት በ ድንገት በ መኪና,ካሳ ትናንት በ ድንገት ወደ ጎንደር,ካሳ ትናንት በ ድንገት በ መኪና,ካሳ ትናንት በ ድንገት ወደ ጎንደር,በ መኪና,ወደ ጎንደር,ሄድ,በ መኪና,ወደ ጎንደር,2,2,በ,ወደ,መኪና,ጎንደር,NOUN,NOUN,prepositional,prepositional,Preverbal,Amharic
+ካሳ በ ርግጥ በ መኪና ወደ ትምህርት ቤት ይ ሄድ ኣል ።,ካሳ በ ርግጥ በ መኪና,ካሳ በ ርግጥ ወደ ትምህርት ቤት,ካሳ በ ርግጥ በ መኪና,ካሳ በ ርግጥ ወደ ቤት,በ መኪና,ወደ ቤት,ሄድ,በ መኪና,ወደ ትምህርት ቤት,2,3,በ,ወደ,መኪና,ቤት,NOUN,NOUN,prepositional,prepositional,Preverbal,Amharic
+ለ ወንድም ዋ ፍየል ገዝት ኣ ወደ ጎጃም ለ ሰርግ ት መጣ ኣል ኧች ።,ለ ወንድም ዋ ፍየል ገዝት ኣ ወደ ጎጃም,ለ ወንድም ዋ ፍየል ገዝት ኣ ለ ሰርግ,ለ ወንድም ዋ ፍየል ገዝት ኣ ወደ ጎጃም,ለ ወንድም ዋ ፍየል ገዝት ኣ ለ ሰርግ,ወደ ጎጃም,ለ ሰርግ,መጣ,ወደ ጎጃም,ለ ሰርግ,2,2,ወደ,ለ,ጎጃም,ሰርግ,PROPN,NOUN,prepositional,prepositional,Preverbal,Amharic

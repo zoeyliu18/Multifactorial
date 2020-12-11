@@ -106,35 +106,49 @@ def extract_pp(verb_index, sentence):
 
 						adp = ' '.join(w for w in adp_toks)
 
+						pp_idx = adp_list.copy()
+						pp_idx.append(int(d_tok[0]))
+						pp_idx.sort()
+						
+						pp_simple = []
+						pp_simple_lexical = []
+
+						for i in pp_idx:
+							pp_simple.append(sentence[int(i) - 1][2])
+							pp_simple_lexical.append(sentence[int(i) - 1][1])
+						
+						pp_simple = ' '.join(w for w in pp_simple)
+						pp_simple_lexical = ' '.join(w for w in pp_simple_lexical)
+
 						### P NP V ###
 
 						if adp_list[-1] < int(d_tok[0]) and int(d_tok[0]) < int(verb_index):
-							preverbal_pp.append([verb_index, d_tok[0], str(adp), 'prepositional', 'preverbal'])
+							preverbal_pp.append([verb_index, d_tok[0], str(adp), pp_simple, pp_simple_lexical, 'prepositional', 'preverbal'])
 
 						### P NP P V ###
 
 						if adp_list[0] < int(d_tok[0]) and adp_list[-1] > int(d_tok[0]) and adp_list[-1] < int(verb_index):
-							preverbal_pp.append([verb_index, d_tok[0], str(adp), 'circumpositional', 'preverbal'])
+							preverbal_pp.append([verb_index, d_tok[0], str(adp), pp_simple, pp_simple_lexical, 'circumpositional', 'preverbal'])
 
 						### NP P V ###
 
 						if adp_list[0] > int(d_tok[0]) and adp_list[-1] < int(verb_index):
-							preverbal_pp.append([verb_index, d_tok[0], str(adp), 'postpositional', 'preverbal'])
+							preverbal_pp.append([verb_index, d_tok[0], str(adp), pp_simple, pp_simple_lexical, 'postpositional', 'preverbal'])
 
 						### V P NP ###
 
 						if adp_list[0] > int(verb_index) and adp_list[-1] < int(d_tok[0]):
-							postverbal_pp.append([verb_index, d_tok[0], str(adp), 'prepositional', 'postverbal'])
+							postverbal_pp.append([verb_index, d_tok[0], str(adp), pp_simple, pp_simple_lexical, 'prepositional', 'postverbal'])
 
 						### V P NP P ###
 
 						if adp_list[0] > int(verb_index) and adp_list[0] < int(d_tok[0]) and adp_list[-1] > int(d_tok[0]):
-							postverbal_pp.append([verb_index, d_tok[0], str(adp), 'circumpositional', 'postverbal'])
+							postverbal_pp.append([verb_index, d_tok[0], str(adp), pp_simple, pp_simple_lexical, 'circumpositional', 'postverbal'])
 
 						### V NP P ###
 
 						if adp_list[0] > int(d_tok[0]) and int(d_tok[0]) > int(verb_index):
-							postverbal_pp.append([verb_index, d_tok[0], str(adp), 'postpositional', 'postverbal'])
+							postverbal_pp.append([verb_index, d_tok[0], str(adp), pp_simple, pp_simple_lexical, 'postpositional', 'postverbal'])
 
 
 		if len(preverbal_pp) == 2 and len(postverbal_pp) == 2:
@@ -146,7 +160,6 @@ def extract_pp(verb_index, sentence):
 
 		if len(preverbal_pp) != 2 and len(postverbal_pp) == 2:
 			pp_list['Postverbal'] = postverbal_pp
-
 
 	return pp_list
 
@@ -190,8 +203,8 @@ def subtree_generate(index, sentence):
 
 def Expelliarmus(file_handle, directory, language):
 
-	data = [['Sentence', 'Context_PP1', 'Context_PP2', 'Verb', 'PP1', 'PP2', 'PP1_len', 'PP2_len', 'Adp1', 'Adp2', 'NP1', 'NP2', 'PP1_Pronom', 'PP2_Pronom', 'PP1_Type', 'PP2_Type', 'Position', 'Language']]
-	pairs = []
+	data = [['Sentence', 'Context_PP1', 'Context_PP2', 'Context_PP1_simple', 'Context_PP2_simple', 'PP1_simple', 'PP2_simple', 'Verb', 'PP1', 'PP2', 'PP1_len', 'PP2_len', 'Adp1', 'Adp2', 'NP1', 'NP2', 'PP1_Pronom', 'PP2_Pronom', 'PP1_Type', 'PP2_Type', 'Position', 'Language']]
+	tuples = []
 
 	with io.open(directory + '/' + file_handle, encoding = 'utf-8') as f:
 		sent = conll_read_sentence(f)
@@ -220,7 +233,9 @@ def Expelliarmus(file_handle, directory, language):
 						pp1_np = sent[int(pp1[1]) - 1][2]
 						pp1_pronom = sent[int(pp1[1]) - 1][3]
 						pp1_adp = pp1[2]
-						pp1_type = pp1[3]
+						pp1_simple = pp1[3]
+						pp1_simple_lexical = pp1[4]
+						pp1_type = pp1[-2]
 						pp1_subtree, pp1_subtree_idx = subtree_generate(pp1[1], sent)
 						pp1_toks = ' '.join(w[1] for w in pp1_subtree)
 						pp1_len = len(pp1_subtree_idx)
@@ -228,13 +243,19 @@ def Expelliarmus(file_handle, directory, language):
 						context_pp1 = pp1_toks
 						if pp1_subtree_idx[0] != 0:
 							context_pp1 = ' '.join(w[1] for w in sent[ : pp1_subtree_idx[0]]) + ' ' + pp1_toks
+
+						context_pp1_simple = pp1_simple_lexical
+						if pp1_subtree_idx[0] != 0:
+							context_pp1_simple = ' '.join(w[1] for w in sent[ : pp1_subtree_idx[0]]) + ' ' + pp1_simple_lexical
 						
-						pairs.append(v_tok + ' ' + pp1_np)
+						tuples.append(v_tok + ' ' + pp1_np + ' ' + pp1_adp)
 
 						pp2_np = sent[int(pp2[1]) - 1][2]
 						pp2_pronom = sent[int(pp2[1]) - 1][3]
 						pp2_adp = pp2[2]
-						pp2_type = pp2[3]
+						pp2_simple = pp2[3]
+						pp2_simple_lexical = pp2[4]
+						pp2_type = pp2[-2]
 						pp2_subtree, pp2_subtree_idx = subtree_generate(pp2[1], sent)
 						pp2_toks = ' '.join(w[1] for w in pp2_subtree)
 						pp2_len = len(pp2_subtree_idx)
@@ -243,16 +264,20 @@ def Expelliarmus(file_handle, directory, language):
 						if pp1_subtree_idx[0] != 0:
 							context_pp2 = ' '.join(w[1] for w in sent[ : pp1_subtree_idx[0]]) + ' ' + pp2_toks
 
-						pairs.append(v_tok + ' ' + pp2_np)
+						context_pp2_simple = pp2_simple_lexical
+						if pp1_subtree_idx[0] != 0:
+							context_pp2_simple = ' '.join(w[1] for w in sent[ : pp1_subtree_idx[0]]) + ' ' + pp2_simple_lexical
+
+						tuples.append(v_tok + ' ' + pp2_np + ' ' + pp2_adp)
 
 						sent_toks = ' '.join(w[1] for w in sent)
 
 					#data = [['Sentence', 'Context_PP1', 'Context_PP2', 'Verb', 'PP1', 'PP2', 'PP1_len', 'PP2_len', 'Adp1', 'Adp2', 'NP1', 'NP2', 'PP1_Type', 'PP2_Type', 'Position']]
-						data.append([sent_toks, context_pp1, context_pp2, v_tok, pp1_toks, pp2_toks, pp1_len, pp2_len, pp1_adp, pp2_adp, pp1_np, pp2_np, pp1_pronom, pp2_pronom, pp1_type, pp2_type, position, language])
+						data.append([sent_toks, context_pp1, context_pp2, context_pp1_simple, context_pp2_simple, pp1_simple, pp2_simple, v_tok, pp1_toks, pp2_toks, pp1_len, pp2_len, pp1_adp, pp2_adp, pp1_np, pp2_np, pp1_pronom, pp2_pronom, pp1_type, pp2_type, position, language])
 
 			sent = conll_read_sentence(f)
 
-	return data, set(pairs)
+	return data, set(tuples)
 
 if __name__ == '__main__':
 
@@ -270,13 +295,14 @@ if __name__ == '__main__':
 	for directory in glob.glob('*'):
 		for file in os.listdir(directory):
 			if file.endswith('.conllu'):
-				
+
 				language = directory.split('-')[0][3 : ]
-				pp_data, pp_pairs = Expelliarmus(file, directory, language)
+				pp_data, pp_tuples = Expelliarmus(file, directory, language)
 
-				if len(pp_data) >= 101:
+				if len(pp_data) >= 51:
 
-					print(file)
+					preverbal = 0
+					postverbal = 0
 
 					output = io.open(args.output + language + '_pp.csv', 'w', newline = '', encoding = 'utf-8')
 					writer = csv.writer(output)
@@ -284,13 +310,20 @@ if __name__ == '__main__':
 					for pp in pp_data:
 						writer.writerow(pp)
 
+						if pp[-2] == 'Preverbal':
+							preverbal += 1
+						if pp[-2] == 'Postverbal':
+							postverbal += 1
+
+					print(language + ' ' + str(preverbal) + ' ' + str(postverbal) + ' ' + str(len(pp_data)))
+
 					words = []
 					words_out = io.open(args.output + language + '_words.txt', 'w', newline = '', encoding = 'utf-8')
 				
-					pairs_out = io.open(args.output + language + '_pairs.txt', 'w', newline = '', encoding = 'utf-8')
+					tuples_out = io.open(args.output + language + '_tuples.txt', 'w', newline = '', encoding = 'utf-8')
 				
-					for tok in pp_pairs:
-						pairs_out.write(tok + '\n')
+					for tok in pp_tuples:
+						tuples_out.write(tok + '\n')
 
 						for w in tok.split():
 							words.append(w)

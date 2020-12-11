@@ -1,0 +1,14 @@
+Sentence,Context_PP1,Context_PP2,Context_PP1_simple,Context_PP2_simple,PP1_simple,PP2_simple,Verb,PP1,PP2,PP1_len,PP2_len,Adp1,Adp2,NP1,NP2,PP1_Pronom,PP2_Pronom,PP1_Type,PP2_Type,Position,Language
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _,_ _ _ _ _ _ _ _ _ _ _ _,_ _ _ _ _ _ _ _ _ _ _ _,_ _ _ _ _ _ _ _ _ _ _ _,_ _ _ _ _ _ _ _ _ _ _ _,_ _,_ _,_,_ _,_ _,2,2,_,_,_,_,NOUN,NOUN,postpositional,postpositional,Postverbal,Mbya_Guarani_Dooley
+_ ramove _ _ _ _ _ _ _ _ _ _ _ _ _ _,_ ramove _ _ _ _ _ _ _ _ _ _,_ ramove _ _ _ _ _ _ _ _ _ _,_ ramove _ _ _ _ _ _ _ _ _ _,_ ramove _ _ _ _ _ _ _ _ _ _,_ _,_ _,_,_ _,_ _,2,2,_,_,_,_,NOUN,NOUN,postpositional,postpositional,Preverbal,Mbya_Guarani_Dooley
+_ _ _ _ _ _ _ _ vy _ _ _ _ _ _ _,_ _ _ _ _ _ _ _ vy _ _ _ _,_ _ _ _ _ _ _ _ vy _ _ _,_ _ _ _ _ _ _ _ vy _ _ _,_ _ _ _ _ _ _ _ vy _ _ _,_ _,_ _,_,_ _ _,_ _,3,2,_,_,_,_,VERB,NOUN,postpositional,postpositional,Postverbal,Mbya_Guarani_Dooley
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _,_ _ _ _,_ _ _,_ _,_ _,_ _,_ _,_,_ _ _ _,_ _ _,4,3,_,_,_,_,NOUN,PRON,postpositional,postpositional,Preverbal,Mbya_Guarani_Dooley
+_ _ _ _ _ _ _ je _ _,_ _ _ _ _,_ _ _ _ _ je,_ _ _ _ _,_ _ _ _ _,_ _,_ _,_,_ _,_ _ je,2,3,_,_,_,_,PRON,PRON,postpositional,postpositional,Preverbal,Mbya_Guarani_Dooley
+_ _ _ _ _ _ _,_ _ _,_ _ _,_ _ _,_ _ _,_ _,_ _,_,_ _,_ _,2,2,_,_,_,_,PRON,NOUN,postpositional,postpositional,Postverbal,Mbya_Guarani_Dooley
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _,_ _,_ _ _ _,_ _,_ _,_ _,_ _,_,_ _,_ _ _ _,2,4,_,_,_,_,PRON,NOUN,postpositional,postpositional,Preverbal,Mbya_Guarani_Dooley
+_ _ _ _ _ _ _ _,_ _ _ _ _,_ _ _ _ _,_ _ _ _ _,_ _ _ _ _,_ _,_ _,_,_ _,_ _,2,2,_,_,_,_,NOUN,NOUN,postpositional,postpositional,Postverbal,Mbya_Guarani_Dooley
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _,_ _ _ _ _ _ _ _ _ _ _ _,_ _ _ _ _ _ _ _ _ _ _ _,_ _ _ _ _ _ _ _ _ _ _,_ _ _ _ _ _ _ _ _ _ _,_ _,_ _,_,_ _ _,_ _ _,3,3,_,_,_,_,PRON,PRON,postpositional,postpositional,Preverbal,Mbya_Guarani_Dooley
+"_ _ _ _ _ , _ _ _ _",_ _ _ _ _,_ _ _ _ _ _,_ _ _ _ _,_ _ _ _ _,_ _,_ _,_,_ _,_ _ _,2,3,_,_,_,_,NOUN,NOUN,postpositional,postpositional,Postverbal,Mbya_Guarani_Dooley
+_ _ _ _ _ _ _ _ _ _ _,_ _ _ _ _ _ _ _,_ _ _ _ _ _ _ _,_ _ _ _ _ _ _ _,_ _ _ _ _ _ _ _,_ _,_ _,_,_ _,_ _,2,2,_,_,_,_,NOUN,NOUN,postpositional,postpositional,Postverbal,Mbya_Guarani_Dooley
+_ _ _ _ _ _,_ _ _,_ _ _,_ _ _,_ _ _,_ _,_ _,_,_ _,_ _,2,2,_,_,_,_,NOUN,NOUN,postpositional,postpositional,Postverbal,Mbya_Guarani_Dooley
+_ _ _ _ _ _ _ _ _ _,_ _ _ _ _,_ _ _ _ _ _,_ _ _ _ _,_ _ _ _ _,_ _,_ _,_,_ _,_ _ _,2,3,_,_,_,_,NOUN,NOUN,postpositional,postpositional,Postverbal,Mbya_Guarani_Dooley

@@ -1,0 +1,133 @@
+Mean,SE,CI25,CI975,Significant,Rhat,Bulk_ESS,Tail_ESS,Factor,Order,Language,Simple_Order
+-1.826714111,3.018774792,-9.048203523,3.432119391,no,1.00233281,8818,11277,Intercept,English preverbal,English,preverbal
+-4.366009067,4.104494464,-15.02925274,0.691803891,no,1.001997956,6113,7910,Len,English preverbal,English,preverbal
+0.532355672,1.664259242,-2.172596448,4.513879612,no,1.001469947,9454,9548,Semantic_closeness,English preverbal,English,preverbal
+7.511787589,6.843879093,-1.211193075,25.25717047,no,1.001168751,12587,10154,Lexical_frequency,English preverbal,English,preverbal
+20.13145028,17.33750482,1.676872474,64.79936587,yes positive,1.003600124,7376,4550,Pronominality,English preverbal,English,preverbal
+0.343047765,0.485603844,-0.341840112,1.563704277,no,1.001711902,9964,10698,Predictability,English preverbal,English,preverbal
+-0.167474568,0.086236958,-0.34164829,-0.001657544,yes negative,1.000128287,34855,27946,Intercept,English postverbal,English,postverbal
+1.679839133,0.146939867,1.401912929,1.977749311,yes positive,1.000125103,41539,27472,Len,English postverbal,English,postverbal
+0.557602663,0.076148251,0.410121567,0.70864936,yes positive,1.000372449,54639,27456,Semantic_closeness,English postverbal,English,postverbal
+-0.112704224,0.093556268,-0.322295878,0.043694976,no,1.000203876,43634,23000,Lexical_frequency,English postverbal,English,postverbal
+-0.267686584,0.093456279,-0.455008829,-0.084504668,yes negative,1.000211202,61269,26496,Predictability,English postverbal,English,postverbal
+1.003961003,0.242562999,0.542762428,1.489134692,yes positive,1.000423173,59763,26647,Pronominality,English postverbal,English,postverbal
+-0.002883714,0.021127312,-0.043651811,0.038185738,no,1.000922717,21059,15075,Intercept,German preverbal,German,preverbal
+0.088547939,0.018880288,0.051686682,0.125431676,yes positive,1.001017878,39425,13490,Len,German preverbal,German,preverbal
+0.595085668,0.019106842,0.557791073,0.63280702,yes positive,1.00044635,35057,13482,Semantic_closeness,German preverbal,German,preverbal
+-0.039361796,0.035465087,-0.116578286,0.023693733,no,1.001532387,29180,12212,Lexical_frequency,German preverbal,German,preverbal
+-0.221819168,0.016050133,-0.253059337,-0.191008464,yes negative,1.000648113,39377,13593,Predictability,German preverbal,German,preverbal
+2.002779878,0.085180365,1.837832785,2.170394858,yes positive,1.001214507,25858,13671,Pronominality,German preverbal,German,preverbal
+0.028421603,0.042080725,-0.054633462,0.110079425,no,1.000292701,12474,14851,Intercept,German postverbal,German,postverbal
+0.542982345,0.032696078,0.479935798,0.607476409,yes positive,1.000844984,35973,12981,Len,German postverbal,German,postverbal
+-0.504891038,0.028782378,-0.561526657,-0.448030948,yes negative,1.000211773,36378,13213,Semantic_closeness,German postverbal,German,postverbal
+-0.003909979,0.022702113,-0.052783168,0.036993398,no,1.000902585,34462,10999,Lexical_frequency,German postverbal,German,postverbal
+0.216294651,0.056878219,0.105410303,0.327047971,yes positive,1.00077718,29138,13175,Predictability,German postverbal,German,postverbal
+0.613068131,0.17010421,0.28389178,0.951221318,yes positive,1.000796384,34060,14031,Pronominality,German postverbal,German,postverbal
+-0.433202269,0.141967264,-0.719590115,-0.161812504,yes negative,1.00037943,123304,68897,Intercept,Dutch preverbal,Dutch,preverbal
+0.75213829,0.166078999,0.440339342,1.09170824,yes positive,1.000486428,100985,64750,Len,Dutch preverbal,Dutch,preverbal
+0.595483515,0.112403514,0.382344592,0.823171912,yes positive,1.00012515,74403,63238,Semantic_closeness,Dutch preverbal,Dutch,preverbal
+-12.9630161,3.153159362,-19.4911447,-7.12317516,yes positive,1.000495951,144610,65660,Lexical_frequency,Dutch preverbal,Dutch,preverbal
+-0.255428056,0.083444307,-0.422240587,-0.095850414,yes negative,1.000689696,127303,67527,Predictability,Dutch preverbal,Dutch,preverbal
+1.356993234,0.419063848,0.553477201,2.199116758,yes positive,1.000594164,109965,69881,Pronominality,Dutch preverbal,Dutch,preverbal
+-0.082409561,0.145331803,-0.378363627,0.19426918,no,1.000572215,30546,24078,Intercept,Dutch postverbal,Dutch,postverbal
+1.076281684,0.166251167,0.770871952,1.422135918,yes positive,1.000957246,29694,24646,Len,Dutch postverbal,Dutch,postverbal
+-0.359627555,0.125331661,-0.612673576,-0.118758468,yes negative,1.000221357,41620,26052,Semantic_closeness,Dutch postverbal,Dutch,postverbal
+-0.60156491,0.520441705,-1.895514899,0.01077154,no,1.000354739,19413,16241,Lexical_frequency,Dutch postverbal,Dutch,postverbal
+0.071677035,0.199215016,-0.322258136,0.46190658,no,1.000577674,59320,26509,Predictability,Dutch postverbal,Dutch,postverbal
+0.237243191,0.653383619,-1.046881064,1.526011437,no,1.000765656,47203,28013,Pronominality,Dutch postverbal,Dutch,postverbal
+0.072005563,0.261994918,-0.398068664,0.606507401,no,1.002607433,15234,8321,Intercept,Croatian preverbal,Croatian,preverbal
+0.22527025,0.223287268,-0.20266156,0.679907426,no,1.000332099,27968,18474,Len,Croatian preverbal,Croatian,preverbal
+-0.327317371,0.235390137,-0.828695705,0.09729395,no,1.001468303,14735,10188,Semantic_closeness,Croatian preverbal,Croatian,preverbal
+-0.607218597,0.308575973,-1.329586959,-0.175070282,yes positive,1.001681678,7645,5411,Lexical_frequency,Croatian preverbal,Croatian,preverbal
+0.089810701,0.142154809,-0.165922115,0.396854796,no,1.00166302,14207,7746,Predictability,Croatian preverbal,Croatian,preverbal
+-0.816596,1.197074918,-3.390708767,1.13255384,no,1.001943927,8400,4943,Pronominality,Croatian preverbal,Croatian,preverbal
+-0.121581122,0.202516144,-0.547087624,0.250788884,no,1.000453038,24915,24851,Intercept,Croatian postverbal,Croatian,postverbal
+1.244343401,0.240241839,0.801248741,1.748294718,yes positive,1.000629938,51512,28132,Len,Croatian postverbal,Croatian,postverbal
+-0.003626965,0.170506501,-0.338709403,0.335606942,no,1.000449955,45086,27543,Semantic_closeness,Croatian postverbal,Croatian,postverbal
+0.175846711,0.432357589,-0.681424856,1.023581587,no,1.000279735,35321,26211,Lexical_frequency,Croatian postverbal,Croatian,postverbal
+0.758147466,0.431484667,-0.081151827,1.619743774,no,1.000325286,41705,27933,Predictability,Croatian postverbal,Croatian,postverbal
+11.80921605,11.17479039,0.640008116,41.91361139,yes positive,1.001157198,11039,6376,Pronominality,Croatian postverbal,Croatian,postverbal
+-3.665997965,5.976959204,-16.85175818,7.320402144,no,1.000711918,14732,15374,Intercept,Bulgarian preverbal,Bulgarian,preverbal
+-6.932900422,7.610547006,-24.21956145,6.040009234,no,1.000720893,18344,16402,Len,Bulgarian preverbal,Bulgarian,preverbal
+-11.14158215,5.781611958,-25.51435509,-3.248521221,yes negative,1.001035813,10847,9401,Semantic_closeness,Bulgarian preverbal,Bulgarian,preverbal
+-1.193680466,4.111028201,-10.098506,6.658691014,no,1.000738709,14051,13283,Lexical_frequency,Bulgarian preverbal,Bulgarian,preverbal
+7.571774754,4.748049556,0.99462399,19.01368323,yes positive,1.001174367,10835,9829,Predictability,Bulgarian preverbal,Bulgarian,preverbal
+8.516635804,11.36085518,-10.26926983,34.80737969,no,1.001017277,17576,12839,Pronominality,Bulgarian preverbal,Bulgarian,preverbal
+-0.140481528,0.422273873,-1.039573748,0.666763842,no,1.000916159,15890,12929,Intercept,Bulgarian postverbal,Bulgarian,postverbal
+0.888779967,0.352636627,0.290382622,1.675744878,yes positive,1.000923227,16686,15707,Len,Bulgarian postverbal,Bulgarian,postverbal
+-0.230096129,0.357093883,-1.002538932,0.416897353,no,1.001070401,17441,14131,Semantic_closeness,Bulgarian postverbal,Bulgarian,postverbal
+0.439071676,0.717156378,-0.791646278,2.069577164,no,1.002080768,11953,9093,Lexical_frequency,Bulgarian postverbal,Bulgarian,postverbal
+-0.650439145,0.775934494,-2.315028966,0.780586241,no,1.000749683,22855,17697,Predictability,Bulgarian postverbal,Bulgarian,postverbal
+12.58339852,11.16636078,1.094554158,41.11480714,yes positive,1.001818672,9017,5234,Pronominality,Bulgarian postverbal,Bulgarian,postverbal
+-0.00327097,0.188023634,-0.381661161,0.361641969,no,1.000307823,28221,22804,Intercept,Polish preverbal,Polish,preverbal
+0.324291826,0.182845125,0.004295357,0.71633733,yes positive,1.000684138,22658,18693,Len,Polish preverbal,Polish,preverbal
+0.39925589,0.172170317,0.08761349,0.764957154,yes positive,1.000882768,17583,21033,Semantic_closeness,Polish preverbal,Polish,preverbal
+-0.440965161,0.780918473,-2.205701818,0.864425069,no,1.000395767,36046,23173,Lexical_frequency,Polish preverbal,Polish,preverbal
+-0.164174326,0.089441604,-0.347125689,0.007413852,no,1.000527677,31677,22990,Predictability,Polish preverbal,Polish,preverbal
+0.616799016,0.536009279,-0.403450948,1.707187499,no,1.000311211,33283,27549,Pronominality,Polish preverbal,Polish,preverbal
+-0.44075588,0.106828674,-0.658843131,-0.239382154,yes negative,1.000386789,25522,25709,Intercept,Polish postverbal,Polish,postverbal
+3.09721279,0.26528357,2.597134215,3.637647851,yes positive,1.000321246,35716,27210,Len,Polish postverbal,Polish,postverbal
+-0.006274743,0.090519341,-0.181844063,0.170006829,no,1.000669129,61096,27696,Semantic_closeness,Polish postverbal,Polish,postverbal
+0.470723774,0.393507177,-0.013717241,1.438963924,no,1.000176319,25155,20719,Lexical_frequency,Polish postverbal,Polish,postverbal
+0.368930645,0.211772937,-0.042614618,0.787488933,no,1.000505096,59080,26200,Predictability,Polish postverbal,Polish,postverbal
+2.711893415,0.440683609,1.910824804,3.647210189,yes positive,1.000772972,54688,24775,Pronominality,Polish postverbal,Polish,postverbal
+0.021278191,0.059139846,-0.093896074,0.13824687,no,1.000329188,49223,30518,Intercept,Czech preverbal,Czech,preverbal
+0.268456219,0.075487219,0.121663764,0.419305108,yes positive,1.000517456,62196,26973,Len,Czech preverbal,Czech,preverbal
+-0.069926941,0.050182102,-0.169417608,0.027434976,no,1.00040096,63742,26822,Semantic_closeness,Czech preverbal,Czech,preverbal
+0.111538318,0.062757477,-0.004070835,0.243732375,no,1.001405506,61023,24536,Lexical_frequency,Czech preverbal,Czech,preverbal
+0.671049863,0.130668899,0.418842904,0.929091045,yes positive,1.000491827,61971,28845,Pronominality,Czech preverbal,Czech,preverbal
+-0.072137648,0.034491535,-0.140248696,-0.005346711,yes negative,1.001041458,62637,26577,Predictability,Czech preverbal,Czech,preverbal
+0.044749037,0.052110302,-0.056095247,0.148592903,no,1.000194383,36382,30708,Intercept,Czech postverbal,Czech,postverbal
+1.482187309,0.081431437,1.326781081,1.646421293,yes positive,1.000606154,63477,25729,Len,Czech postverbal,Czech,postverbal
+-0.126488653,0.044154186,-0.212953124,-0.040638911,yes negative,1.000690801,74846,26670,Semantic_closeness,Czech postverbal,Czech,postverbal
+0.05571069,0.044180112,-0.030813077,0.143329876,no,1.001263279,54483,28115,Lexical_frequency,Czech postverbal,Czech,postverbal
+0.09439207,0.085211049,-0.071282168,0.260593502,no,1.000658943,73923,28006,Predictability,Czech postverbal,Czech,postverbal
+1.145059515,0.245577636,0.674863249,1.634285867,yes positive,1.000912194,56827,28404,Pronominality,Czech postverbal,Czech,postverbal
+-0.019243436,0.062699052,-0.142645511,0.102610636,no,1.000209164,55278,27984,Intercept,Russian preverbal,Russian,preverbal
+0.446061562,0.080788284,0.291722331,0.608818218,yes positive,1.000279156,65442,27423,Len,Russian preverbal,Russian,preverbal
+0.075587834,0.056347362,-0.035404629,0.186964125,no,1.000471073,63813,29173,Semantic_closeness,Russian preverbal,Russian,preverbal
+0.35624447,0.336815616,-0.137877398,1.16126105,no,1.000913939,42988,20785,Lexical_frequency,Russian preverbal,Russian,preverbal
+0.23905748,0.042824429,0.156588042,0.324453825,yes positive,1.000572094,65660,28432,Predictability,Russian preverbal,Russian,preverbal
+1.028253005,0.133689974,0.769438826,1.295399112,yes positive,1.000296146,55919,30184,Pronominality,Russian preverbal,Russian,preverbal
+0.030777015,0.060525097,-0.087493107,0.149919298,no,1.000482013,52997,30144,Intercept,Russian postverbal,Russian,postverbal
+1.806949503,0.106878028,1.601394114,2.02140897,yes positive,1.000285466,59324,26463,Len,Russian postverbal,Russian,postverbal
+0.025971932,0.056677654,-0.084965889,0.137174004,no,1.000836164,66575,25929,Semantic_closeness,Russian postverbal,Russian,postverbal
+-0.009121751,0.038697242,-0.08495622,0.06709434,no,1.00041337,74113,28376,Lexical_frequency,Russian postverbal,Russian,postverbal
+0.29269748,0.16763214,-0.032163818,0.619390453,no,1.000224298,68774,27302,Predictability,Russian postverbal,Russian,postverbal
+2.074149286,0.253853169,1.598596025,2.590169572,yes positive,1.000983859,55272,27099,Pronominality,Russian postverbal,Russian,postverbal
+-0.446801987,1.856758609,-4.126292525,3.511451885,no,1.001553205,9375,11599,Intercept,Ukrainian preverbal,Ukrainian,preverbal
+1.141019811,1.705033804,-2.254825546,4.738573115,no,1.000871026,14671,13615,Len,Ukrainian preverbal,Ukrainian,preverbal
+-0.15447758,1.015025842,-2.436791834,1.679028685,no,1.000866018,14177,12799,Semantic_closeness,Ukrainian preverbal,Ukrainian,preverbal
+-12.10178088,11.72781344,-40.43983261,6.821147136,no,1.000690636,13515,12208,Lexical_frequency,Ukrainian preverbal,Ukrainian,preverbal
+0.038334949,0.505566962,-1.010856195,1.044544391,no,1.000398126,19002,19204,Predictability,Ukrainian preverbal,Ukrainian,preverbal
+4.980106842,3.660130518,0.09352305,14.05068059,yes positive,1.002783611,6057,9592,Pronominality,Ukrainian preverbal,Ukrainian,preverbal
+-0.305857823,0.371085353,-1.155437709,0.328725565,no,1.001480703,12503,9852,Intercept,Ukrainian postverbal,Ukrainian,postverbal
+5.206954214,1.975497517,2.722728735,10.20918661,yes positive,1.004122419,3163,5283,Len,Ukrainian postverbal,Ukrainian,postverbal
+0.299135151,0.315935284,-0.218877576,1.035753142,no,1.001644301,9087,8224,Semantic_closeness,Ukrainian postverbal,Ukrainian,postverbal
+2.560333319,2.318723162,0.038490392,8.596165735,yes negative,1.000809403,12433,10242,Lexical_frequency,Ukrainian postverbal,Ukrainian,postverbal
+-2.013284664,0.931289052,-4.249699242,-0.593806746,yes negative,1.00244051,6429,8678,Predictability,Ukrainian postverbal,Ukrainian,postverbal
+3.74492346,1.668953283,1.480556322,7.93655094,yes positive,1.002705055,4427,6087,Pronominality,Ukrainian postverbal,Ukrainian,postverbal
+-0.105462528,0.211462207,-0.534065161,0.30341899,no,1.000257142,26446,23722,Intercept,Italian preverbal,Italian,preverbal
+-0.198569717,0.266958848,-0.737959139,0.311745517,no,1.000486226,28371,25967,Len,Italian preverbal,Italian,preverbal
+-0.087179192,0.160102081,-0.403860818,0.226358401,no,1.000262453,30790,26331,Semantic_closeness,Italian preverbal,Italian,preverbal
+3.167388274,6.219968775,-8.326126824,16.61140851,no,1.000642365,40176,21721,Lexical_frequency,Italian preverbal,Italian,preverbal
+1.82783287,0.455447148,1.01404336,2.790582255,yes positive,1.001597324,14071,19034,Pronominality,Italian preverbal,Italian,preverbal
+-0.195505584,0.07479208,-0.3502102,-0.056175001,yes negative,1.000768145,19930,21451,Predictability,Italian preverbal,Italian,preverbal
+0.042640979,0.064350605,-0.085341086,0.16823799,no,1.000274194,44248,29451,Intercept,Italian postverbal,Italian,postverbal
+2.67649625,0.149408608,2.390981071,2.977745498,yes positive,1.000285191,56037,27999,Len,Italian postverbal,Italian,postverbal
+-0.204389883,0.058607533,-0.319706108,-0.08966167,yes negative,1.000466717,61666,27585,Semantic_closeness,Italian postverbal,Italian,postverbal
+-0.017489506,0.04836681,-0.115636516,0.075678518,no,1.000981121,62630,25472,Lexical_frequency,Italian postverbal,Italian,postverbal
+0.193915323,0.106998951,-0.017138212,0.403372548,no,1.000730326,69327,28826,Predictability,Italian postverbal,Italian,postverbal
+0.139536553,0.25070211,-0.349644606,0.62718894,no,1.001028943,75025,27756,Pronominality,Italian postverbal,Italian,postverbal
+-0.067888935,0.221365506,-0.507162209,0.362134534,no,1.000735059,42957,28128,Intercept,Spanish preverbal,Spanish,preverbal
+-1.260481919,0.435004984,-2.185522387,-0.479105906,yes negative,1.000731276,33340,22625,Len,Spanish preverbal,Spanish,preverbal
+-0.292751918,0.203407667,-0.709186191,0.092559779,no,1.000648453,35361,23996,Semantic_closeness,Spanish preverbal,Spanish,preverbal
+0.893339164,2.302698293,-3.936219037,5.174480558,no,1.000796591,30606,26701,Lexical_frequency,Spanish preverbal,Spanish,preverbal
+0.172324673,0.068517533,0.047249128,0.313659805,yes positive,1.000860917,39587,25078,Predictability,Spanish preverbal,Spanish,preverbal
+2.933212174,0.967934914,1.262936493,5.05760566,yes positive,1.000714753,30987,24079,Pronominality,Spanish preverbal,Spanish,preverbal
+0.077378063,0.059691627,-0.039475295,0.194124671,yes positive,1.000317504,37903,31024,Intercept,Spanish postverbal,Spanish,postverbal
+2.231996599,0.120170192,2.001938777,2.472836001,yes positive,1.000277071,46198,27299,Len,Spanish postverbal,Spanish,postverbal
+0.042715537,0.050530944,-0.055799825,0.142343669,no,1.000545928,69003,27866,Semantic_closeness,Spanish postverbal,Spanish,postverbal
+-0.142863704,0.086512778,-0.347367552,-0.008708075,yes positive,1.000357555,46477,20894,Lexical_frequency,Spanish postverbal,Spanish,postverbal
+0.297274471,0.073710218,0.153228828,0.443843849,yes positive,1.000804691,62922,28504,Predictability,Spanish postverbal,Spanish,postverbal
+0.342282904,0.254622219,-0.154788683,0.846018251,no,1.000531005,66810,26208,Pronominality,Spanish postverbal,Spanish,postverbal
